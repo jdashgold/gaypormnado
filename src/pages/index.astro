@@ -23,6 +23,11 @@ if (chosenQuery === 'Fixing suit' || chosenQuery === 'suit' || chosenQuery === '
       }
       h1 {
         font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 1.3rem;
+        color: #666;
         margin-bottom: 30px;
       }
       img {
@@ -51,6 +56,10 @@ if (chosenQuery === 'Fixing suit' || chosenQuery === 'suit' || chosenQuery === '
   </head>
   <body>
     <h1>{title}</h1>
+
+    {title === 'You are PORMADO!' && <h2>according to halata expert: Jayda Shgold</h2>}
+    {title === 'You are GAY!' && <h2>according to gay porn expert: Frederic Junson Suri</h2>}
+
     <img src={gifUrl} alt="Random gif" />
     <br />
     <a href="/">Refresh</a>
