@@ -11,9 +11,11 @@ if (chosenQuery === 'Fixing suit' || chosenQuery === 'suit' || chosenQuery === '
 } else if (chosenQuery === 'gay porn' || chosenQuery === 'gay kissing') {
   title = 'Are you Pormado or Gay? You are GAY!';
 } else if (chosenQuery === 'fallback') {
-  title = 'Ubos na :( balik ka mamaya. Goodvibes muna w/ meme Vice ^_^Y';
+  title = 'Pagod na si ako :( balik ka mamaya. Goodvibes muna ^_^Y !!';
 } else {
   title = 'burikat!';
+}
+
 ---
 <html lang="en">
   <head>
@@ -59,8 +61,11 @@ if (chosenQuery === 'Fixing suit' || chosenQuery === 'suit' || chosenQuery === '
   </head>
   <body>
     <h1>{title}</h1>
-      {title === 'You are PORMADO!' && <h2>"according to halata expert: Jayda Shgold"</h2>}
-      {title === 'You are Gay!' && <h2>"according to halata expert: Frederic Junson Suri"</h2>}
+
+    {title === 'Are you Pormado or Gay? You are PORMADO!' && <h2>according to halata expert: Jayda S. Hugould</h2>}
+    {title === 'Are you Pormado or Gay? You are GAY!' && <h2>according to gay porn expert: Frederic Junson Suri</h2>}
+    {title === 'Pagod na si ako :( balik ka mamaya. Goodvibes muna ^_^Y !!' && <h2>according to good vibes expert: Meme Vice</h2>}
+
     <img src={gifUrl} alt="Random gif" />
     <br />
     <a href="/">Refresh</a>
